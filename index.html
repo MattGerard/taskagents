@@ -1,25 +1,307 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Task Agents</title>
-		<meta
-			name="description"
-			content="TaskAgents.ai harnesses the power of AI to transform your work processes. Simplify tasks, enhance efficiency, and achieve unprecedented success with our advanced AI solutions."
-		/>
-		<meta
-			name="keywords"
-			content="AI Task Management, Task Automation, AI Efficiency, Work Simplification, Enhanced Productivity, AI Solutions, TaskAgents.ai, Intelligent Task Handling, AI Technology, Achieve with AI"
-		/>
-		<link rel="icon" type="image/png" href="favicon-32x32.png" />
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	</head>
-	<body>
-		<div class="centered-content">
-			<img src="TALOGO.png" alt="Logo" />
-		</div>
-	</body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskAgents - AI Agents & Workflow Automation for Enterprise</title>
+  <meta name="description" content="TaskAgents builds production-grade AI agents and workflow automation for finance, legal, and regulated industries. Senior team, proven delivery, security-first approach.">
+  <meta name="keywords" content="AI agents, workflow automation, enterprise AI, RAG, knowledge agents, AI integration, regulated industries">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TaskAgents - AI Agents & Workflow Automation for Enterprise">
+  <meta property="og:description" content="Production-grade AI agents and workflow automation for regulated industries. Senior team, proven delivery, security-first approach.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taskagents.ai">
+  <meta property="og:image" content="https://taskagents.ai/TALOGO.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">
+          <img src="TALOGO.png" alt="TaskAgents Logo">
+          <span>TaskAgents</span>
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="services/">Services</a></li>
+            <li><a href="about/">About</a></li>
+            <li><a href="contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Production-Grade AI Agents for Enterprise</h1>
+      <p class="hero-subtitle">
+        We build intelligent automation that works in regulated environments, from discovery to deployment to monitoring.
+      </p>
+      <div class="hero-cta">
+        <a href="contact/" class="btn btn-primary btn-large">Schedule a Consultation</a>
+        <a href="services/" class="btn btn-secondary btn-large">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+          </div>
+          <h3>Security & Compliance First</h3>
+          <p>Built for finance, legal, and other regulated sectors. We handle permissions, audit trails, and data governance from day one.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+            </svg>
+          </div>
+          <h3>Senior Engineering Team</h3>
+          <p>No junior developers. Our team brings deep experience in distributed systems, LLMs, and production operations.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+            </svg>
+          </div>
+          <h3>Rapid Pilot to Production</h3>
+          <p>Proven process from strategy workshop to working pilot, then scale to production with monitoring and guardrails.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How We Help</h2>
+        <p class="section-subtitle">
+          End-to-end delivery: from identifying opportunities to building production systems
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-subtitle">Strategy & Discovery</div>
+            <h3 class="card-title">AI Opportunity Assessment</h3>
+          </div>
+          <p><strong>Who it's for:</strong> Teams exploring AI but unsure where to start or how to prioritize use cases.</p>
+          <p><strong>What we deliver:</strong> A roadmap with prioritized opportunities, technical feasibility analysis, risk assessment, and cost projections.</p>
+          <a href="services/#assessment" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-subtitle">Knowledge & Retrieval</div>
+            <h3 class="card-title">Knowledge Agents & RAG</h3>
+          </div>
+          <p><strong>Who it's for:</strong> Organizations with internal documentation, support tickets, or knowledge bases that need intelligent search and Q&A.</p>
+          <p><strong>What we deliver:</strong> Production-ready RAG systems with chunking strategies, embedding models, vector databases, and retrieval evaluation.</p>
+          <a href="services/#knowledge-agents" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-subtitle">Process Automation</div>
+            <h3 class="card-title">Workflow Automation</h3>
+          </div>
+          <p><strong>Who it's for:</strong> Teams with repetitive manual processes involving document review, data entry, or multi-step approvals.</p>
+          <p><strong>What we deliver:</strong> Vendor-neutral automation (LangChain, custom orchestration) with monitoring, error handling, and human-in-the-loop flows.</p>
+          <a href="services/#automation" class="btn btn-secondary">Learn More</a>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-subtitle">Integration & Operations</div>
+            <h3 class="card-title">Production Hardening & Monitoring</h3>
+          </div>
+          <p><strong>Who it's for:</strong> Organizations moving from pilot to production or struggling with reliability, cost, or governance in existing AI systems.</p>
+          <p><strong>What we deliver:</strong> Observability, evaluation pipelines, guardrails, rate limiting, cost optimization, and incident response runbooks.</p>
+          <a href="services/#production" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="services/" class="btn btn-primary btn-large">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Overview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How We Work</h2>
+        <p class="section-subtitle">
+          A disciplined approach that balances speed with reliability
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Understand</h3>
+          <p>We start with your business problem, not the technology. Stakeholder interviews, process mapping, and data assessment give us a clear picture of what will actually work in your environment.</p>
+        </div>
+
+        <div class="card">
+          <h3>Build</h3>
+          <p>Rapid iteration on a working pilot. We build the minimum viable system to prove value, then refine based on real user feedback. No long waterfalls, just working software you can test.</p>
+        </div>
+
+        <div class="card">
+          <h3>Deploy</h3>
+          <p>Production readiness means monitoring, guardrails, runbooks, and knowledge transfer. We don't just hand over code. We ensure your team can operate and evolve the system.</p>
+        </div>
+
+        <div class="card">
+          <h3>Optimize</h3>
+          <p>Continuous improvement based on real usage. We help you measure what matters, identify bottlenecks, and refine the system as your needs evolve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach Section -->
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Work With Us</h2>
+        <p class="section-subtitle">
+          What sets our approach apart
+        </p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Start Small, Prove Value Fast</h3>
+          <p>We don't propose lengthy projects with uncertain outcomes. A focused pilot proves the concept and demonstrates ROI before scaling. You'll see working software quickly, not after months of planning.</p>
+        </div>
+
+        <div class="card">
+          <h3>No Vendor Lock-in</h3>
+          <p>We're not tied to a specific platform or reselling licenses. We recommend the tools that fit your requirements and constraints, whether that's commercial APIs, open source models, or hybrid approaches.</p>
+        </div>
+
+        <div class="card">
+          <h3>Security and Compliance Built In</h3>
+          <p>We've worked in regulated environments. We understand data governance, audit requirements, access controls, and compliance frameworks. Security isn't bolted on at the end.</p>
+        </div>
+
+        <div class="card">
+          <h3>You Own the System</h3>
+          <p>Every engagement includes full documentation, architecture diagrams, runbooks, and knowledge transfer. You're not dependent on us to operate or modify the system after handoff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container-narrow text-center">
+      <h2 class="section-title">Ready to Build Something Real?</h2>
+      <p class="section-subtitle mb-8">
+        Let's discuss your use case and map out a practical path forward. No sales pitch, just a technical conversation.
+      </p>
+      <a href="contact/" class="btn btn-primary btn-large">Schedule a Call</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>TaskAgents</h4>
+          <p>Production-grade AI agents and workflow automation for enterprise. Built by senior engineers who understand regulated environments.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/#assessment">AI Opportunity Assessment</a></li>
+            <li><a href="services/#knowledge-agents">Knowledge Agents & RAG</a></li>
+            <li><a href="services/#automation">Workflow Automation</a></li>
+            <li><a href="services/#production">Production Hardening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about/">About</a></li>
+            <li><a href="contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@taskagents.ai">info@taskagents.ai</a></li>
+            <!-- Add your location if desired -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TaskAgents.AI. All rights reserved.</p>
+        <ul class="social-links">
+          <!-- TODO: Replace # with actual social media URLs when available -->
+          <li>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="GitHub" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>

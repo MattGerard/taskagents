@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact TaskAgents - Let's Discuss Your AI Project</title>
+  <meta name="description" content="Get in touch with TaskAgents to discuss your AI agent or workflow automation project. Schedule a consultation to explore how we can help.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact TaskAgents - Let's Discuss Your AI Project">
+  <meta property="og:description" content="Reach out to discuss AI agents, RAG systems, or workflow automation for your organization.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taskagents.ai/contact/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="/" class="logo">
+          <img src="../TALOGO.png" alt="TaskAgents Logo">
+          <span>TaskAgents</span>
+        </a>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero">
+    <div class="container-narrow text-center">
+      <h1 class="hero-title">Let's Talk</h1>
+      <p class="hero-subtitle">
+        Tell us about your project and we'll get back to you within 24 hours
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <!-- Contact Form -->
+        <div>
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and we'll respond within one business day. Or email us directly at <a href="mailto:info@taskagents.ai">info@taskagents.ai</a>.</p>
+
+          <!--
+            IMPORTANT: To enable this contact form, you need to configure a Formspree endpoint.
+
+            Setup Instructions:
+            1. Go to https://formspree.io/ and create a free account
+            2. Create a new form and get your form endpoint URL
+            3. Replace "YOUR_FORMSPREE_FORM_ID" below with your actual form ID
+
+            Example:
+            action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID"
+
+            Alternatives to Formspree:
+            - Basin (https://usebasin.com/)
+            - FormSubmit (https://formsubmit.co/)
+            - Netlify Forms (if hosting on Netlify)
+            - EmailJS (https://www.emailjs.com/)
+          -->
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xkoglnrg"
+            method="POST"
+            novalidate>
+
+            <!-- Honeypot field for spam protection (hidden from users) -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name" class="form-label">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                required
+                autocomplete="name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email" class="form-label">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+                autocomplete="email">
+            </div>
+
+            <!-- Company -->
+            <div class="form-group">
+              <label for="company" class="form-label">Company</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="form-input"
+                autocomplete="organization">
+            </div>
+
+            <!-- Role -->
+            <div class="form-group">
+              <label for="role" class="form-label">Your Role</label>
+              <select id="role" name="role" class="form-select">
+                <option value="">Select your role (optional)</option>
+                <option value="executive">Executive / Leadership</option>
+                <option value="product">Product Management</option>
+                <option value="engineering">Engineering / Technical</option>
+                <option value="operations">Operations</option>
+                <option value="it">IT / Infrastructure</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Budget Range -->
+            <div class="form-group">
+              <label for="budget" class="form-label">Estimated Budget Range</label>
+              <select id="budget" name="budget" class="form-select">
+                <option value="">Select budget range (optional)</option>
+                <option value="exploratory">Just exploring / Not sure yet</option>
+                <option value="under-50k">Under $50k</option>
+                <option value="50k-100k">$50k - $100k</option>
+                <option value="100k-250k">$100k - $250k</option>
+                <option value="over-250k">Over $250k</option>
+              </select>
+              <p class="form-helper">This helps us understand project scope and recommend the right engagement model.</p>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message" class="form-label">Tell Us About Your Project *</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-textarea"
+                required
+                placeholder="What problem are you trying to solve? What would success look like?"></textarea>
+              <p class="form-helper">The more context you provide, the better we can help.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info & FAQs -->
+        <div>
+          <h2>Other Ways to Reach Us</h2>
+
+          <div class="card mb-8">
+            <h3>Email</h3>
+            <p><a href="mailto:info@taskagents.ai">info@taskagents.ai</a></p>
+            <p>For general inquiries, project discussions, or partnership opportunities.</p>
+          </div>
+
+          <div class="card mb-8">
+            <h3>Response Time</h3>
+            <p>We typically respond to inquiries within one business day. For urgent matters, please mention "urgent" in your subject line or message.</p>
+          </div>
+
+          <h3>What to Expect</h3>
+          <p>When you reach out, here's what happens:</p>
+          <ol>
+            <li><strong>Initial Response (1 business day):</strong> We'll acknowledge your message and may ask clarifying questions.</li>
+            <li><strong>Discovery Call (optional):</strong> For most projects, we'll suggest a 30-minute call to understand your needs in detail.</li>
+            <li><strong>Proposal or Recommendation:</strong> We'll outline an approach and engagement model, or honestly tell you if we're not the right fit.</li>
+          </ol>
+
+          <h3>Frequently Asked Questions</h3>
+
+          <div class="mt-6">
+            <h4>Do you work with startups or only enterprise?</h4>
+            <p>We work with organizations of all sizes, as long as the project is a good fit for our expertise. The key factors are: clear business problem, available data/access, and realistic expectations about AI capabilities.</p>
+          </div>
+
+          <div class="mt-6">
+            <h4>What's your typical engagement size?</h4>
+            <p>Our projects range from 1-2 week assessments to multi-month implementations. We're flexible on engagement models: fixed-scope projects, retainers, or augmented team arrangements.</p>
+          </div>
+
+          <div class="mt-6">
+            <h4>Do you sign NDAs?</h4>
+            <p>Yes, we're happy to sign mutual NDAs before discussing confidential information.</p>
+          </div>
+
+          <div class="mt-6">
+            <h4>What if we're not sure AI is the right solution?</h4>
+            <p>That's exactly why we offer Opportunity Assessments. We'll help you figure out if AI makes sense, what alternatives exist, and what the realistic ROI looks like.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alternative Contact CTA -->
+  <section class="section section-gray">
+    <div class="container-narrow text-center">
+      <h2 class="section-title">Prefer Email?</h2>
+      <p class="section-subtitle mb-8">
+        Send us a message directly and we'll get back to you within 24 hours.
+      </p>
+      <a
+        href="mailto:info@taskagents.ai?subject=Project%20Inquiry&body=Hi%20TaskAgents%20team%2C%0A%0AI'm%20interested%20in%20discussing%20a%20potential%20project.%0A%0ACompany%3A%20%0ARole%3A%20%0A%0AProject%20Description%3A%0A%0A%0ABudget%20Range%3A%20"
+        class="btn btn-primary btn-large">
+        Email Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>TaskAgents</h4>
+          <p>Production-grade AI agents and workflow automation for enterprise. Built by senior engineers who understand regulated environments.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/#assessment">AI Opportunity Assessment</a></li>
+            <li><a href="/services/#knowledge-agents">Knowledge Agents & RAG</a></li>
+            <li><a href="/services/#automation">Workflow Automation</a></li>
+            <li><a href="/services/#production">Production Hardening</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@taskagents.ai">info@taskagents.ai</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TaskAgents.AI. All rights reserved.</p>
+        <ul class="social-links">
+          <!-- TODO: Replace # with actual social media URLs when available -->
+          <!-- <li>
+            <a href="#" aria-label="LinkedIn" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="GitHub" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
